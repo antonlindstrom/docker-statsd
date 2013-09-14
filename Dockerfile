@@ -13,7 +13,7 @@ run     rm /tmp/node-v0.11.0.tar.gz
 run     git clone git://github.com/etsy/statsd.git statsd
 run     mkdir -p /var/log/supervisor
 
-add     ./config.json ./statsd/config.json
+add     ./config.js ./statsd/config.js
 add     ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 expose  :8125/udp
