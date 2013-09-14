@@ -13,3 +13,7 @@ Environment variables that can be used to set options:
     GRAPHITE_PORT (default: 2003)
     GRAPHITE_HOST (default: localhost)
     STATSD_PORT   (default: 8125)
+
+This image is available in the docker registry at antonlindstrom/statsd:
+
+    sudo docker pull antonlindstrom/statsd
