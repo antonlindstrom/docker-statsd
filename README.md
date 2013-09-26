@@ -6,7 +6,7 @@ Statsd listens on 8125 by default and is exposed on the as the same on the docke
 
 Example to run the docker instance:
 
-    sudo docker run -e GRAPHITE_HOST=graphite.example.com -d statsd
+    sudo docker run -e GRAPHITE_HOST=graphite.example.com -d antonlindstrom/statsd
 
 Environment variables that can be used to set options:
 
