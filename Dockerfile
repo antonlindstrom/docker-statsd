@@ -17,5 +17,6 @@ add     ./config.js ./statsd/config.js
 add     ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 expose  :8125/udp
+expose  8126/tcp
 
 cmd     supervisord -n
