@@ -17,3 +17,7 @@ Environment variables that can be used to set options:
 This image is available in the docker registry at antonlindstrom/statsd:
 
     sudo docker pull antonlindstrom/statsd
+
+The [statsd admin interface](https://github.com/etsy/statsd/blob/master/docs/admin_interface.md)
+can be accessed through `8126/tcp`. This is not exposed on the host so you'll either
+have to know the translated port or the IP of the instance.
