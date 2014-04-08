@@ -2,11 +2,12 @@
 
 This is a simple example of running statsd in docker.
 
-Statsd listens on 8125 by default and is exposed on the as the same on the docker host.
+Statsd listens on 8125 by default, to use it outside you'll need to expose it
+to the outside world.
 
 Example to run the docker instance:
 
-    sudo docker run -e GRAPHITE_HOST=graphite.example.com -d antonlindstrom/statsd
+    sudo docker run -e GRAPHITE_HOST=graphite.example.com -p 8125:8125 -d antonlindstrom/statsd
 
 Environment variables that can be used to set options:
 
