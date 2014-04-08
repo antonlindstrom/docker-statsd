@@ -1,3 +1,6 @@
 image: antonlindstrom/drone-docker-build
+env:
 script:
   - docker build . -t antonlindstrom/statsd
+services:
+notify:
