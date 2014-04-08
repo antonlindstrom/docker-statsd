@@ -1,0 +1,3 @@
+image: antonlindstrom/drone-docker-build
+script:
+  - docker build . -t antonlindstrom/statsd
