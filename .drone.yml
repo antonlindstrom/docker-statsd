@@ -1,6 +1,10 @@
 image: antonlindstrom/drone-docker-build
 env:
 script:
+  - pwd
+  - echo "Running docker ps:"
+  - docker ps
+  - echo "Building antonlindstrom/statsd:"
   - docker build . -t antonlindstrom/statsd
 services:
 notify:
